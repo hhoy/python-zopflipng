@@ -11,6 +11,7 @@
 data = open('test.png','rb').read()
 result = png_optimize(data)
 with open('result.png','wb') as f:
+f.write(result)
 f.close()
  ```
 
