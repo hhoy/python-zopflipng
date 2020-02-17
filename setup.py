@@ -57,8 +57,8 @@ module_zopflipng = Extension('zopflipng._clib',
                              include_file=include_file, )
 
 setup(name='zopflipng',
-      version='1.0.1',
-      description='zopflipng wrapper for python',
+      version='1.0.2',
+      description='Zopflipng wrapper for python,used for lossless compression of PNG',
       author ='hhoy',
       license='Apache',
       author_email='utf-16@qq.com',

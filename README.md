@@ -12,6 +12,8 @@
  ```
 # a simple example, using the default configuration
 
+from zopflipng import png_optimize
+
 data = open('test.png', 'rb').read()
 result, code = png_optimize(data)
 # if code ==0 ,png compression success
