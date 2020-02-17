@@ -72,7 +72,8 @@ static PyObject * PNGOptimize(PyObject *self,PyObject *args){
 
     int ret = ZopfliPNGOptimize(origpng, png_options, verbose, &resultpng);
     PyObject *result_bytes = PyBytes_FromStringAndSize((char*)&resultpng[0],resultpng.size());
-    return result_bytes;
+    PyObject *code = PyLong_FromSize_t(ret);
+    return PyTuple_Pack(2,result_bytes,code);
 }
 
 static PyMethodDef Methods[] = {
